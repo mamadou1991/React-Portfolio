@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+  }
+:root {
+    --main-color: var(--light);
+    --main-text: rgb(51, 51, 51);
+    --sub-text: #aa2a6c;
+    --sub-sub-text: #4f645f;
+}
+::placeholder {
+    color: var(--main-text);
+    font-family: 'Exo 2', sans-serif;
+    font-weight:900px
+}
+body {
+    background-color:var(--main-color);
+    margin: 0;
+    padding: 0
+}
+.about-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+.page-header {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Exo 2', sans-serif;
+    color: var(--main-text);
+    padding-top: 50px
+}
+.page-content {
+    display: flex;
+    justify-content: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    color: var(--main-text);
+    font-size: 30px;
+    padding-top: 50px;
+    
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+.navbar-items {
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+}
+.nav-link {
+    color: var(--main-text);
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    padding: 20px;
+}
+.nav-link:hover {
+    color: var(--sub-sub-text);
+}
+.active-nav {
+    text-decoration: none;
+    color: var(--sub-text);
+    font-family: 'Exo 2', sans-serif;
+    padding: 20px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--main-text);
+    text-align: center;
+    margin-bottom: 25px
+}
+.icon {
+    font-size: 27px;
+    color: var(--main-text);
+    padding: 30px
+}
+.icon:hover {
+    color: var(--sub-text);
+}
+.resume-download {
+    display: flex;
+    justify-content: center;
+    color: var(--main-text);
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: 125px;
+}
+.resume-download:hover {
+    color: var(--sub-text)
+}
+.pro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+.pro-list {
+    list-style: none;
+    margin: 70px;
+    padding: 0;
+    text-align: center;
+}
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 15px auto;
+    height: 200px;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: solid 1.25px var(--main-text);
+    padding: 4px 7px;
+    margin: 40px;
+}
+button {
+    width: 120px;
+    float: right;;
+    margin-left: 15px;
+    border-radius: 3px;
+    border: solid 1px var(--sub-text);
+    padding: 4px 7px;
+    font-family: 'Exo 2', sans-serif;
+    background: var(--sub-text);
+    cursor: pointer;
+}
+.form-color {
+    background-color: var(--main-color);  
+    color: black
+}
+.form-color:active {
+    border: none
+}
+.contact-form {
+    padding-top: 100px
+}
+.project-link {
+    align-items: center;
+}
+.form-section {
+    padding-top: 100px
+}/* ------------------------------------------------------------
+                    PORTFOLIO PAGE - card styling             
+--------------------------------------------------------------- */
+/* Float four columns side by side */
+.column {
+    float:left;
+    width: 20%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+.row {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.card {
+    
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+}
+.text-card {
+    background: url("../../public/abc.png") no-repeat center center;
+}
+.blog-card {
+    background: url("../../public/tech64.png") no-repeat center center;
+}
+.password-card {
+    background: url("../../public/lock64.png") no-repeat center center;
+}
+
+.card-head {
+    padding-bottom: 100px
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+/* Style the counter cards */
+.card {
+    padding: 16px;
+    text-align: center;
+    background-color: var(--main-color);
+    border: 1.35px solid var(--main-text);
+    border-radius: 10px;
+}
+
+.span-container {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50% -50%);
+    position: absolute;
+    top: 57%;
+    left: 40%;
+}
+span {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    animation: speed 2s infinite ease-in-out;
+}
+
+
+@keyframes speed {
+    0% {
+        transform: translate(0%);
+        border-radius: 50%;
+    }
+
+    25% {
+        transform: translate(150%) scale(0.5);
+        border-radius: 0%;
+    }
+
+    50% {
+        transform: translate(150%, 150%);
+        border-radius: 50%;
+    }
+
+    75% {
+        transform: translate(0, 150%) scale(0.5);
+        border-radius: 0%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .span-container {
+    left: 40%;
+    }
+}
+

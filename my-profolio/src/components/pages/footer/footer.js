@@ -11,7 +11,7 @@ export default function Footer() {
         <a class="icon" href="https://github.com/mamadou1991" target="_blank" rel="noreferrer noopener">
             <VscGithub />
         </a>
-        <a class="icon" href="#" target="_blank" rel="noreferrer noopener">
+        <a class="icon" href="https://www.stackoverflow.com/mamadou1991" target="_blank" rel="noreferrer noopener">
           <FaStackOverflow />
         </a>
         <a class="icon" href="https://www.linkedin.com/mamadou1991" target="_blank" rel="noreferrer noopener">
